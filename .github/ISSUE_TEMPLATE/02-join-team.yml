@@ -18,9 +18,15 @@ body:
   # dsl:assignment-field:start - AUTO-GENERATED from this semester's
   # `semester-config/.system/assignments.lock.yml`: the assignments open for team
   # formation right now. Edits between these markers are overwritten.
-  - type: markdown
+  - type: dropdown
+    id: assignment
     attributes:
-      value: This semester has no team assignment open right now, so this form is not needed.
+      label: Assignment
+      description: This semester has no team assignment open right now, so this form is not needed.
+      options:
+        - No team assignment is open right now
+    validations:
+      required: true
   # dsl:assignment-field:end
   - type: dropdown
     id: action
